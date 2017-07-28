@@ -1,0 +1,44 @@
+.jumbotron{
+	text-align: center;
+
+}
+
+img {
+	z-index: 1;
+	position: absolute;
+	left: 30%;
+}
+
+#display {
+	z-index: 2;
+	position: absolute;
+	top: 68%;
+	left: 44%;
+	font-size: 18px;
+	background-color: #fff;
+	width: 100px;
+	text-align: center;
+	border: solid gray 1px;
+	height: 41px;
+	line-height: 2;
+}
+
+#start{
+	z-index: 2;
+	position: absolute;
+	top: 75%;
+	left: 40%;
+}
+#stop{
+	z-index: 2;
+	position: absolute;
+	top: 75%;
+	left: 45%;
+
+}
+#reset {
+	z-index: 2;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+}
