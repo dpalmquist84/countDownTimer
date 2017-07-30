@@ -51,6 +51,7 @@ $("#display").html(minutes + ":" + seconds);
 function stop() {
 	
 	clearInterval(intervalId);
+	$("#display").text("00:00")
 }
 
 function reset() {
