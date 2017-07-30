@@ -3,8 +3,8 @@ $(document).ready(function(){
 var audio = new Audio("./assets/audio/alarm.mp3");
 var time = 5;
 var intervalId;
-minutes = 24;
-seconds = 60;
+var minutes = 24;
+var seconds = 60;
 
 
 $("#stop").on("click", stop);
@@ -12,7 +12,7 @@ $("#start").on("click", run);
 $("#reset").on("click", reset);
 
 function run() {
-	audio.pause();
+	
 	intervalId = setInterval(decrement, 1000);
 	if (minutes === 0 && seconds === 0 ) {
 		audio.play();
@@ -49,7 +49,7 @@ $("#display").html(minutes + ":" + seconds);
 }
 
 function stop() {
-	audio.pause();
+	
 	clearInterval(intervalId);
 }
 
@@ -57,7 +57,8 @@ function reset() {
 	stop();
 	audio.pause()
 	$("#display").html("25:00");
-	minutes = 25;
+	seconds++;
+	minutes = 24;
 	seconds = 60;
 	run();
     
