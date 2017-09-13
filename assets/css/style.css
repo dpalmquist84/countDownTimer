@@ -26,19 +26,19 @@ img {
 #start{
 	z-index: 2;
 	position: absolute;
-	top: 75%;
+	top: 85%;
 	left: 40%;
 }
 #stop{
 	z-index: 2;
 	position: absolute;
-	top: 75%;
-	left: 45%;
+	top: 85%;
+	left: 50%;
 
 }
 #reset {
 	z-index: 2;
 	position: absolute;
-	top: 75%;
-	left: 50%;
+	top: 85%;
+	left: 60%;
 }
